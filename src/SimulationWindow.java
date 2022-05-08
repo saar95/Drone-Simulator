@@ -20,7 +20,16 @@ public class SimulationWindow {
 			}
 		});
 	}
-
+	public void returnHome(){
+		return_home = !return_home;
+		algo1.speedDown();
+		algo1.spinBy(180, true, new Func() {
+			@Override
+			public void method() {
+				algo1.speedUp();
+			}
+		});
+	}
 	public SimulationWindow() {
 		initialize();
 	}
@@ -275,7 +284,7 @@ public class SimulationWindow {
 				new Point(84,73),
 				new Point(92,100)};
 		
-		Map map = new Map("C:\\Users\\saar9\\IdeaProjects\\DroneSimulator\\Maps\\p11.png",startPoints[map_num-1]);
+		Map map = new Map("C:\\Users\\almog\\IdeaProjects\\Drone-Simulator\\Maps\\p11.png",startPoints[map_num-1]);
 		
 		algo1 = new AutoAlgo1(map);
 		
