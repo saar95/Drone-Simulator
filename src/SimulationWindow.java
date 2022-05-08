@@ -8,7 +8,7 @@ public class SimulationWindow {
 
 	private JFrame frame;
 	public long start,end;
-
+	public boolean flag = true;
 	public static void main(String[] args) {
 
 		EventQueue.invokeLater(new Runnable() {
@@ -321,13 +321,12 @@ public class SimulationWindow {
 		info_label2.setText("<html>" + String.valueOf(algo1.counter) + " <BR>isRisky:" + String.valueOf(algo1.is_risky) +
 				"<BR>" + String.valueOf(algo1.risky_dis) + "</html>");
 
-		end = start + 230000; // 60 seconds 1000 ms/sec
-		if (System.currentTimeMillis() > end)
+		end = start + 230000; // 4 min
+		if (System.currentTimeMillis() > end && flag)
 		{
-			System.out.println("current   " + System.currentTimeMillis());
-			System.out.println("start   " +start);
-			System.out.println("@@@@@@@");
+			System.out.println("4 min passed, returning to home");
 			returnHome();
+			flag = false;
 		}
 
 	}
