@@ -1,3 +1,8 @@
+## submit:
+Saar Barel 316524370
+Ishay Levi 318439759
+Almog Reuveny 205883580
+
 # Drone Simulator
 The main goal for this project is to try find good solution of small drone, flying inside indoor building without getting hit and crash.
 The project fully autonomous 2d drone simulator, this simulator is trying to be realistic as much as it can, with lidar sensors,gyroscope sensor ,optical flow sensor and speed sensor.
@@ -51,4 +56,6 @@ If you wish to add custom map it has to be black/white pixels- black is wall/obs
 ![](https://i.imgur.com/Do0Z3gP.png)
 ![](https://i.imgur.com/Y73PO2C.png)
 ![graphexample](https://user-images.githubusercontent.com/28596354/60256218-cc095680-98d9-11e9-8ab4-70c00e863df8.png)
+
+
 
