@@ -1,7 +1,7 @@
 ## submit:
-Saar Barel 316524370
-Ishay Levi 318439759
-Almog Reuveny 205883580
+Saar Barel 316524370\
+Ishay Levi 318439759\
+Almog Reuveny 205883580\
 
 # Drone Simulator
 The main goal for this project is to try find good solution of small drone, flying inside indoor building without getting hit and crash.
